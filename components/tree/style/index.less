@@ -5,6 +5,7 @@
 
 @tree-prefix-cls: ~'@{c7n-prefix}-tree';
 @tree-showline-icon-color: @text-color-secondary;
+@tree-node-prefix-cls: ~'@{tree-prefix-cls}-treenode';
 
 .antCheckboxFn(@checkbox-prefix-cls: ~'@{c7n-prefix}-tree-checkbox');
 
@@ -13,6 +14,7 @@
   margin: 0;
   padding: 0;
 
+  // =================== Virtual List ===================
   ol,
   ul {
     margin: 0;
@@ -21,6 +23,7 @@
   }
 
   li {
+    position: relative;
     margin: 0;
     padding: 0.04rem 0;
     white-space: nowrap;
